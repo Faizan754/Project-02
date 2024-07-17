@@ -216,6 +216,59 @@ body {
 
 @media screen and (max-width: 1000px) {
     .flex-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        max-width: 720px;
     }
+
+    .flex-container-right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-container-left-side {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .flex-container {
+        max-width: 530px;
+    }
+
+    .flex-container-left-side {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .flex-container-right-side {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .flex-container {}
+
+    .flex-container-left-side {
+        text-align: center;
+
+    }
+
+    .flex-container-btns {
+        justify-content: center;
+    }
+
+    .flex-container-left-side h1 {
+        font-size: 28px;
+    }
+
+    .flex-container-left-side p {
+        font-size: 18px;
+    }
+
+
 }
