@@ -231,6 +231,65 @@ body {
     text-align: left;
 }
 
+.slider-section {
+    background-color: #f5f6f8;
+    padding: 12px 0;
+
+}
+
+.slider-container {
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.slider-content div img {
+    padding: 0 10px;
+    width: 120px;
+    font-size: 100px;
+    transition: .3s;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(-120, 0px);
+    }
+
+    50% {
+        transform: translate(-240px, 0px);
+    }
+
+    75% {
+        transform: translate(-360px, 0px);
+    }
+
+    100% {
+        transform: translate(-480px, 0px);
+    }
+}
+
+.slider-content div {
+    width: 116px;
+    margin-right: 120px;
+    animation-name: slideshow;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
 .nav-bar>a:hover {
     color: #47B2E4
 }
@@ -256,6 +315,10 @@ body {
     display: block;
 }
 
+.slider-content div img:hover {
+    transform: scale(1.1, 1.1);
+}
+
 
 
 
@@ -270,6 +333,10 @@ body {
 
     }
 
+    .slider-container {
+        max-width: 900px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -282,11 +349,21 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+
+    .slider-container {
+        max-width: 1120px;
+
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .flex-container {
         max-width: 1320px;
+    }
+
+    .slider-container {
+        max-width: 1320px;
+
     }
 }
 
@@ -316,6 +393,10 @@ body {
         height: auto;
         margin-top: 24px;
     }
+
+    .slider-container {
+        max-width: 650px;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -334,6 +415,8 @@ body {
         height: auto;
 
     }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -356,5 +439,16 @@ body {
         font-size: 18px;
     }
 
+    .slider-container {
+        max-width: 400px;
+    }
+
+
+}
+
+@media screen and (max-width: 390px) {
+    .slider-container {
+        max-width: 150px;
+    }
 
 }
