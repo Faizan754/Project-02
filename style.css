@@ -29,14 +29,6 @@ body {
     max-width: 1320px;
 }
 
-.dropdown-icon span {
-    display: block;
-    background-color: white;
-    width: 20px;
-    height: 2px;
-    margin: 0px 0px 5px 0px;
-    font-size: 28px;
-}
 
 .dropdown-icon-container {
     display: none;
@@ -71,6 +63,14 @@ body {
 
 .fa-solid {
     margin-left: 5px;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.fa-bars {
+    margin-left: 5px;
+    font-size: 24px;
+    color: white;
 }
 
 .main {
@@ -188,11 +188,50 @@ body {
     color: #47B2E4;
 }
 
-.nav-bar-sub-dropdown {
-    display: none;
+.nav-bar-dropdown {
+    position: relative;
 }
 
-.nav-bar a:hover {
+.nav-bar-sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    left: 12%;
+    width: 190px;
+    padding: 10px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-sub-dropdown>div {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    transition: color .3s;
+}
+
+.deep-sub-dropdown {
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    top: 50px;
+    right: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.deep-sub-dropdown div {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+
+.nav-bar>a:hover {
     color: #47B2E4
 }
 
@@ -206,7 +245,15 @@ body {
 }
 
 .nav-bar-dropdown:hover .nav-bar-sub-dropdown {
-    display: inline-block;
+    display: block;
+}
+
+.nav-bar-sub-dropdown div:hover {
+    color: #47B2E4;
+}
+
+.deep-dropdown:hover .deep-sub-dropdown {
+    display: block;
 }
 
 
@@ -228,6 +275,12 @@ body {
 @media screen and (min-width: 1200px) {
     .flex-container {
         max-width: 1120px;
+    }
+
+    .deep-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -284,7 +337,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-    .flex-container {}
+
 
     .flex-container-left-side {
         text-align: center;
