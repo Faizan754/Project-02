@@ -26,3 +26,15 @@
     margin-left: 5px;
     transition: all .3s;
 }
+
+.fa-chevron-right {
+    font-size: 16px;
+    position: relative;
+    left: -3%;
+    transition: all .3s;
+}
+
+.fa-chevron-right:hover {
+    color: #47B2E4;
+    transform: rotate(90deg);
+}

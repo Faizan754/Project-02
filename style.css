@@ -16,7 +16,7 @@ body {
     width: 100%;
     padding: 15px 0;
     text-align: center;
-    background-color: transparent;
+    background-color: rgba(40, 58, 90, 0.9);
     position: fixed;
     z-index: 1;
 }
@@ -375,12 +375,14 @@ body {
 .middle-content-container {
     width: 100%;
     background-color: #f5f6f8;
+    padding: 30px 0;
 }
 
 .middle-content-flex-container {
     width: 100%;
     display: flex;
     margin: 0;
+    padding: 0 12px;
 }
 
 .middle-content-flex-container-left-side {
@@ -398,13 +400,17 @@ body {
 }
 
 .middle-content-flex-container-right-side img {
-    max-width: 100%;
+    max-width: 70%;
     max-height: 70%;
 }
 
 .middle-content-flex-container-left-side-div {
     padding: 0 48px;
 
+}
+
+.middle-content-flex-container-left-side-div-01 {
+    position: relative;
 }
 
 .middle-content-flex-container-left-side-div-wrapper {
@@ -429,10 +435,28 @@ body {
     background-color: white;
     margin-bottom: 20px;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
-.middle-content div {
+.middle-content h4 {
+    position: relative;
+    left: 3%;
+    color: #37517e;
+    transition: color .3s;
+    width: 90%;
+    transition: .3s;
+}
+
+.middle-content h4 span {
+    padding-right: 5px;
+    color: #47B2E4;
+}
+
+.middle-content-flex-container-left-side-paragraph-01,
+.middle-content-flex-container-left-side-paragraph-02,
+.middle-content-flex-container-left-side-paragraph-03 {
     display: none;
+    width: 90%;
 }
 
 
@@ -472,6 +496,26 @@ body {
 
 .about-info-flex-container-right-side a:hover i {
     transform: translate(5px, 0);
+}
+
+.middle-content h4:hover {
+    color: #47B2E4;
+}
+
+
+.middle-content-flex-container-left-side-div-01 h4:hover .middle-content-flex-container-left-side-paragraph-01 {
+    display: block;
+    color: #444;
+}
+
+.middle-content-flex-container-left-side-div-02 h4:hover .middle-content-flex-container-left-side-paragraph-02 {
+    display: block;
+    color: #444;
+}
+
+.middle-content-flex-container-left-side-div-03 h4:hover .middle-content-flex-container-left-side-paragraph-03 {
+    display: block;
+    color: #444;
 }
 
 
@@ -580,6 +624,15 @@ body {
 
     .about-info-flex-container-left-side,
     .about-info-flex-container-right-side {
+        width: 100%;
+    }
+
+    .middle-content-flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .middle-content-flex-container-left-side,
+    .middle-content-flex-container-right-side {
         width: 100%;
     }
 }
