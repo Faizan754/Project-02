@@ -1,0 +1,28 @@
+.fa-solid {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.fa-bars {
+    margin-left: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.fa-circle-play {
+    margin-right: 8px;
+    font-size: 32px;
+}
+
+.fa-circle-check {
+    font-size: 17px;
+    color: #47B2E4;
+    padding-right: 4px;
+}
+
+.fa-arrow-right-long {
+    font-size: 18px;
+    margin-left: 5px;
+    transition: all .3s;
+}
