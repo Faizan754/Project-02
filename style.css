@@ -430,12 +430,18 @@ body {
 
 .middle-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: white;
     margin-bottom: 20px;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.middle-content-sub-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .middle-content h4 {
@@ -457,6 +463,13 @@ body {
 .middle-content-flex-container-left-side-paragraph-03 {
     display: none;
     width: 90%;
+    margin-left: 3%;
+}
+
+.middle-content-flex-container-left-side-paragraph-01 p,
+.middle-content-flex-container-left-side-paragraph-02 p,
+.middle-content-flex-container-left-side-paragraph-03 p {
+    margin-top: 0;
 }
 
 
@@ -498,22 +511,26 @@ body {
     transform: translate(5px, 0);
 }
 
-.middle-content h4:hover {
+.middle-content:hover h4 {
     color: #47B2E4;
 }
 
+.middle-content:hover .fa-chevron-right {
+    color: #47B2E4;
+    transform: rotate(90deg);
+}
 
-.middle-content-flex-container-left-side-div-01 h4:hover .middle-content-flex-container-left-side-paragraph-01 {
+.middle-content-flex-container-left-side-div-01:hover .middle-content-flex-container-left-side-paragraph-01 {
     display: block;
     color: #444;
 }
 
-.middle-content-flex-container-left-side-div-02 h4:hover .middle-content-flex-container-left-side-paragraph-02 {
+.middle-content-flex-container-left-side-div-02:hover .middle-content-flex-container-left-side-paragraph-02 {
     display: block;
     color: #444;
 }
 
-.middle-content-flex-container-left-side-div-03 h4:hover .middle-content-flex-container-left-side-paragraph-03 {
+.middle-content-flex-container-left-side-div-03:hover .middle-content-flex-container-left-side-paragraph-03 {
     display: block;
     color: #444;
 }
@@ -581,9 +598,6 @@ body {
         max-width: 1320px;
     }
 
-    /* .middle-content-flex-container {
-        max-width: 1320px;
-    } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -687,6 +701,12 @@ body {
 
     .about-info-flex-container {
         max-width: 495px;
+    }
+
+    .middle-content-flex-container-left-side-div,
+    .middle-content-flex-container-left-side-div-wrapper {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
