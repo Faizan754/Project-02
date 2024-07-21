@@ -406,7 +406,10 @@ body {
 
 .middle-content-flex-container-left-side-div {
     padding: 0 48px;
+}
 
+.middle-content-flex-container-left-side-div>p {
+    opacity: .7;
 }
 
 .middle-content-flex-container-left-side-div-01 {
@@ -470,6 +473,86 @@ body {
 .middle-content-flex-container-left-side-paragraph-02 p,
 .middle-content-flex-container-left-side-paragraph-03 p {
     margin-top: 0;
+}
+
+.skills-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.skills-section-flex-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-section-left-side {
+    width: 50%;
+    padding: 0 12px;
+}
+
+.skills-section-left-side img {
+    width: 90%;
+}
+
+.skills-section-right-side {
+    width: 50%;
+    padding: 0 12px;
+}
+
+.skills-section-right-side h4 {
+    font-size: 32px;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+
+.skills-section-right-side em {
+    margin-bottom: 16px;
+    opacity: .6;
+}
+
+.progress-bar-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.progress-bar-html {
+    width: 100%;
+    height: 10px;
+    background-color: #37517e;
+}
+
+.progress-bar-title-container {
+    margin-bottom: 16px;
+}
+
+.progress-bar-css,
+.progress-bar-javascript,
+.progress-bar-photoshop {
+    background-color: #EAEDF2;
+    width: 100%;
+    height: 10px;
+}
+
+.progress-bar-css div {
+    background-color: #37517e;
+    width: 90%;
+    height: 10px;
+}
+
+.progress-bar-javascript div {
+    background-color: #37517e;
+    width: 75%;
+    height: 10px;
+}
+
+.progress-bar-photoshop div {
+    background-color: #37517e;
+    width: 55%;
+    height: 10px;
 }
 
 
@@ -595,6 +678,10 @@ body {
     }
 
     .about-info-flex-container {
+        max-width: 1320px;
+    }
+
+    .skills-section-flex-container {
         max-width: 1320px;
     }
 
