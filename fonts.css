@@ -34,7 +34,22 @@
     transition: all .3s;
 }
 
-/* .fa-chevron-right:hover {
+.fa-paperclip,
+.fa-magnifying-glass-plus {
+    font-size: 24px;
+    padding: 0 2px;
+    color: color-mix(in srgb, #444, transparent 30%)
+}
+
+.fa-paperclip {
+    transition: .3s;
+}
+
+.fa-magnifying-glass-plus {
+    transition: .3s;
+}
+
+.fa-paperclip:hover,
+.fa-magnifying-glass-plus:hover {
     color: #47B2E4;
-    transform: rotate(90deg);
-} */
+}
