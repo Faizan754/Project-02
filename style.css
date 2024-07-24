@@ -817,8 +817,91 @@ body {
     display: flex;
 }
 
+#team-section {
+    padding: 60px 0;
+    width: 100%;
+}
 
+.team-section-title {
+    text-align: center;
+}
 
+.team-section-title h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #37517e;
+}
+
+.team-section-title p {
+    color: rgba(0, 0, 0, .7);
+}
+
+.team-section-flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
+.team-section-flex-container-div {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, .1);
+    padding: 30px 20px;
+    margin: 10px;
+    transition: .4s;
+}
+
+.team-section-flex-container-div-img {
+    width: 25%;
+}
+
+.team-section-flex-container-div-img img {
+    width: 100%;
+    border-radius: 9999px;
+}
+
+.team-section-flex-container-div-content {
+    width: 70%;
+}
+
+.team-section-flex-container-div-content h4 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: #37517e;
+}
+
+.team-section-flex-container-div-content p {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 10px;
+    opacity: .6;
+}
+
+.team-section-flex-container-div-content-span {
+    display: block;
+    width: 50px;
+    height: .8px;
+    background-color: rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+
+}
+
+.team-section-flex-container-div-content-icons {
+    margin: 0;
+}
+
+.team-section-flex-container-div-content-icons i {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: color-mix(in srgb, #444, transparent 93%);
+    color: color-mix(in srgb, #444, transparent 20%);
+    transition: .3s;
+}
 
 
 
@@ -916,7 +999,14 @@ body {
     cursor: pointer;
 }
 
+.team-section-flex-container-div-content-icons i:hover {
+    color: white;
+    background-color: #47B2E4;
+}
 
+.team-section-flex-container-div:hover {
+    transform: translateY(-8px);
+}
 
 
 
@@ -944,6 +1034,10 @@ body {
     }
 
     .portfolio-section-flex-container {
+        max-width: 960px;
+    }
+
+    .team-section-flex-container {
         max-width: 960px;
     }
 
@@ -988,6 +1082,10 @@ body {
         max-width: 1140px;
     }
 
+    .team-section-flex-container {
+        max-width: 1140px;
+    }
+
 
 
 }
@@ -1024,6 +1122,10 @@ body {
     }
 
     .portfolio-section-flex-container {
+        max-width: 1320px;
+    }
+
+    .team-section-flex-container {
         max-width: 1320px;
     }
 
@@ -1159,6 +1261,14 @@ body {
         padding-left: 20px;
     }
 
+    .team-section-flex-container {
+        max-width: 770px;
+    }
+
+    .team-section-flex-container-div {
+        max-width: 100%;
+    }
+
 
 
 
@@ -1199,6 +1309,14 @@ body {
 
     .portfolio-section-flex-container {
         max-width: 630px;
+    }
+
+    .team-section-flex-container {
+        max-width: 540px;
+    }
+
+    .team-section-flex-container-div {
+        width: 100%;
     }
 
 
