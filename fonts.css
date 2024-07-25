@@ -27,7 +27,7 @@
     transition: all .3s;
 }
 
-.fa-chevron-right {
+#fa-chevron-right-01 {
     font-size: 16px;
     position: relative;
     left: -3%;
@@ -52,4 +52,53 @@
 .fa-paperclip:hover,
 .fa-magnifying-glass-plus:hover {
     color: #47B2E4;
+}
+
+.fa-check {
+    padding-right: 8px;
+    font-size: 13px;
+    margin: 0;
+    color: #059652;
+}
+
+.fa-xmark {
+    padding-right: 8px;
+    font-size: 15px;
+    margin: 0;
+    opacity: .5;
+}
+
+.fa-star {
+    color: #FFC107;
+    font-size: 15px;
+    margin: 0;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    color: #47B2E4;
+    opacity: .5;
+    font-size: 26px;
+    margin: 0 5px;
+}
+
+.fa-circle-question {
+    color: #47B2E4;
+    font-size: 20px;
+}
+
+.fa-chevron-right {
+    font-size: 16px;
+    opacity: .5;
+    transition: .3s;
+}
+
+.fa-location-dot,
+.fa-phone,
+.fa-envelope {
+    font-size: 20px;
+    background-color: #F0F9FD;
+    color: #47B2E4;
+    padding: 12px;
+    border-radius: 9999px;
 }

@@ -818,7 +818,7 @@ body {
 }
 
 #team-section {
-    padding: 60px 0;
+    padding: 60px 0 0;
     width: 100%;
 }
 
@@ -902,6 +902,417 @@ body {
     color: color-mix(in srgb, #444, transparent 20%);
     transition: .3s;
 }
+
+#pricing-section {
+    padding: 30px 0 50px;
+    background-color: #F5F6F8;
+    width: 100%;
+}
+
+.pricing-section-title {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.pricing-section-title h2 {
+    font-size: 32px;
+    color: #37517e;
+    margin: 15px 0;
+}
+
+.pricing-section-title p {
+    opacity: .7;
+    letter-spacing: .5px;
+}
+
+.pricing-section-flex-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.pricing-section-plans {
+    width: 32%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 3px 20px -2px rgba(0, 0, 0, .1);
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    border-top: 4px solid #f5f6f8;
+}
+
+.pricing-section-plan {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.pricing-section-plan h3 {
+    font-size: 20px;
+    color: #37517e;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.pricing-section-plan h4 {
+    margin: 0;
+    font-size: 48px;
+    color: #47B2E4;
+}
+
+.pricing-section-plan h4 sup {
+    font-size: 28px;
+    color: #47B2E4;
+}
+
+.pricing-section-plan h4 p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, .3);
+    display: inline-block;
+}
+
+.pricing-section-plans-list {
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.pricing-section-plans-list li {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.pricing-section-plans-list li span {
+    opacity: .5;
+}
+
+.pricing-section-plans-link {
+    padding-top: 16px;
+}
+
+.pricing-section-plan a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 35px 10px 35px;
+    border: 1px solid #47B2E4;
+    border-radius: 50px;
+    color: #47B2E4;
+    transition: .3s;
+}
+
+.business-plan {
+    border-color: #47B2E4;
+}
+
+.business-plan .pricing-section-plans-link a {
+    background-color: #47B2E4;
+    color: white;
+}
+
+#testimonials-section {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.testimonials-section-title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.testimonials-section-title h2 {
+    font-size: 32px;
+    margin: 0 0 15px;
+    color: #37517e;
+}
+
+.testimonials-section-title p {
+    letter-spacing: .5px;
+    opacity: .7;
+}
+
+.testimonials-section-flex-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-section-img img {
+    width: 120px;
+    border-radius: 9999px;
+}
+
+.testimonials-section-flex-container h4 {
+    margin: 0;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+.testimonials-section-flex-container>p {
+    margin: 0;
+    padding-top: 2px;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.testimonials-section-reviews {
+    padding-top: 18px;
+}
+
+.testimonials-section-paragraph {
+    padding: 16px 0;
+    width: 65%;
+    text-align: center;
+}
+
+.testimonials-section-paragraph p {
+    margin: 0;
+}
+
+.testimonials-section-swiper-bullet {
+    padding: 5px 0;
+}
+
+.current {
+    background-color: #47B2E4 !important;
+}
+
+.testimonials-section-swiper-bullet span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    background-color: #E3E3E3;
+    margin: 0 2px;
+}
+
+#frequently-asked-question {
+    background-color: #F5F6F8;
+    width: 100%;
+    padding: 30px 0 0;
+}
+
+.frequently-asked-question-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.frequently-asked-question-title h2 {
+    font-size: 32px;
+    color: #37517e;
+}
+
+.frequently-asked-question-title p {
+    letter-spacing: .2px;
+    opacity: .8;
+}
+
+.frequently-asked-question-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.frequently-asked-questions {
+    background-color: white;
+    width: 82%;
+    margin: 10px 0;
+}
+
+.frequently-asked-questions-title {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frequently-asked-questions-title h4 {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    color: #37517e;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.frequently-asked-questions-title h4 span {
+    padding-right: 5px;
+}
+
+.frequently-asked-questions-content {
+    display: none;
+    padding: 0 20px 20px;
+}
+
+.frequently-asked-questions-content p {
+    margin: 0;
+    padding: 0 20px 0 0;
+    opacity: .6;
+}
+
+#contact-section {
+    padding: 50px 0 50px 0;
+}
+
+.contact-section-title {
+    text-align: center;
+}
+
+.contact-section-title h2 {
+    font-size: 32px;
+    color: #37517e;
+    margin: 0 0 15px 0;
+}
+
+.contact-section-title p {
+    opacity: .8;
+}
+
+.contact-section-flex-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.contact-section-flex-container-left-side {
+    width: 40%;
+    border-top: 3px solid #47B2E4;
+    border-bottom: 3px solid #47B2E4;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    margin-right: 12px;
+}
+
+.contact-section-flex-container-left-side-content {
+    padding: 30px 0 0;
+}
+
+
+.contact-section-flex-container-right-side {
+    width: 60%;
+    border-top: 3px solid #47B2E4;
+    border-bottom: 3px solid #47B2E4;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    margin-left: 12px;
+}
+
+.contact-section-flex-container-left-side-content-info {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+
+}
+
+.contact-section-icon {
+    width: 11%;
+    margin-left: 30px;
+}
+
+.contact-section-info {
+    width: 89%;
+}
+
+.contact-section-info h4 {
+    margin: 0;
+    padding-bottom: 5px;
+    color: #37517e;
+    font-size: 18px;
+}
+
+.contact-section-info p {
+    margin: 0;
+}
+
+.contact-section-map {
+    padding: 0 20px 20px;
+}
+
+.contact-section-map iframe {
+    width: 100%;
+    height: 270px;
+}
+
+.form-flex-container {
+    display: flex;
+    padding: 30px 30px 0;
+    width: 100%;
+}
+
+.form-flex-container div {
+    padding: 10px;
+    width: 50%;
+}
+
+.form-flex-container div label {
+    font-size: 18px;
+    opacity: .7;
+}
+
+.form-flex-container div input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+}
+
+.subject-label {
+    padding: 15px 40px 0;
+}
+
+.subject-label label {
+    font-size: 18px;
+    opacity: .7;
+}
+
+.subject-label input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+}
+
+.form-text-area {
+    padding: 15px 40px 0;
+    width: 100%;
+}
+
+.form-text-area label {
+    font-size: 18px;
+    opacity: .7;
+}
+
+.form-text-area textarea {
+    margin-top: 6px;
+    width: 100%;
+    height: 220px;
+    resize: vertical;
+}
+
+.button-submit {
+    padding: 20px 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.button-submit button {
+    padding: 15px 30px;
+    color: white;
+    background-color: #47B2E4;
+    font-size: 15px;
+    border: 1px solid #47B2E4;
+    border-radius: 50px;
+}
+
+
+
+
+
 
 
 
@@ -1008,6 +1419,25 @@ body {
     transform: translateY(-8px);
 }
 
+.pricing-section-plans-link a:hover {
+    color: white;
+    background-color: #47B2E4;
+}
+
+.frequently-asked-questions:hover .frequently-asked-questions-title h4 {
+    color: #47B2E4;
+}
+
+.frequently-asked-questions:hover .fa-chevron-right {
+    transform: rotate(90deg);
+    color: #47B2E4;
+}
+
+
+.frequently-asked-questions:hover .frequently-asked-questions-content {
+    display: block;
+}
+
 
 
 
@@ -1038,6 +1468,14 @@ body {
     }
 
     .team-section-flex-container {
+        max-width: 960px;
+    }
+
+    .pricing-section-flex-container {
+        max-width: 960px;
+    }
+
+    .contact-section-flex-container {
         max-width: 960px;
     }
 
@@ -1086,6 +1524,14 @@ body {
         max-width: 1140px;
     }
 
+    .pricing-section-flex-container {
+        max-width: 1140px;
+    }
+
+    .contact-section-flex-container {
+        max-width: 1140px;
+    }
+
 
 
 }
@@ -1126,6 +1572,22 @@ body {
     }
 
     .team-section-flex-container {
+        max-width: 1320px;
+    }
+
+    .pricing-section-flex-container {
+        max-width: 1320px;
+    }
+
+    .frequently-asked-question-title {
+        max-width: 1320px;
+    }
+
+    .frequently-asked-question-flex-container {
+        max-width: 1320px;
+    }
+
+    .contact-section-flex-container {
         max-width: 1320px;
     }
 
@@ -1269,6 +1731,33 @@ body {
         max-width: 100%;
     }
 
+    .pricing-section-flex-container {
+        max-width: 770px;
+        flex-direction: column;
+    }
+
+    .pricing-section-plans {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .contact-section-flex-container {
+        max-width: 770px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section-flex-container-left-side {
+        width: 100%;
+        margin: 0 0 12px;
+    }
+
+    .contact-section-flex-container-right-side {
+        width: 100%;
+        margin: 12px 0 0;
+        padding-bottom: 20px;
+    }
+
 
 
 
@@ -1317,6 +1806,14 @@ body {
 
     .team-section-flex-container-div {
         width: 100%;
+    }
+
+    .pricing-section-flex-container {
+        max-width: 530px;
+    }
+
+    .contact-section-flex-container {
+        max-width: 530px;
     }
 
 
@@ -1372,11 +1869,24 @@ body {
         width: 100%;
         padding: 0;
     }
+
+    .contact-section-flex-container {
+        max-width: 495px;
+    }
+
+    .contact-section-icon {
+        margin-right: 10px;
+    }
+
 }
 
 @media screen and (max-width: 390px) {
     .slider-container {
         max-width: 150px;
+    }
+
+    .contact-section-icon {
+        margin-right: 20px;
     }
 
 }
