@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/cd6d14188c.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Arsha Bootstrap Template Demo</title>
   </head>
-  <body>
+  <body onscroll="scroll()">
     <div class="container">
       <div class="nav-container">
         <a class="title" href="#">
@@ -19,12 +20,12 @@
         </a>
         <div class="main-section-navbar">
           <nav class="nav-bar">
-            <a class="nav-bar-active" href="">Home</a>
-            <a href="#about-info">About</a>
-            <a href="#services-section">Services</a>
-            <a href="#portfolio-section">Portfolio</a>
-            <a href="#team-section">Team</a>
-            <a href="#pricing-section">Pricing</a>
+            <a class="nav-button nav-bar-active" href="#main-section">Home</a>
+            <a class="nav-button" href="#about-info">About</a>
+            <a class="nav-button" href="#services-section">Services</a>
+            <a class="nav-button" href="#portfolio-section">Portfolio</a>
+            <a class="nav-button" href="#team-section">Team</a>
+            <a class="nav-button" href="#pricing-section">Pricing</a>
             <a class="nav-bar-dropdown" href=""
               >Dropdown <i class="fa-solid fa-chevron-down"></i>
               <div class="nav-bar-sub-dropdown">
@@ -44,29 +45,66 @@
                 <div>Dropdown 4</div>
               </div>
             </a>
-            <a href="#contact-section">Contact</a>
+            <a class="nav-button" href="#contact-section">Contact</a>
           </nav>
         </div>
         <a class="nav-content" href="">Get Started</a>
         <div class="dropdown-icon-container">
           <div class="dropdown-icon">
-            <i class="fa-solid fa-bars"></i>
+            <i onclick="burgerMenu(0)" class="fa-solid fa-bars"></i>
           </div>
-          <nav class="dropdown nav-bar">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Team</a>
-            <a href="">Pricing</a>
-            <a href="">Dropdown <i class="fa-solid fa-chevron-down"></i> </a>
-            <a href="">Contact</a>
-          </nav>
+          <div id="dropdown-parent">
+            <div><i onclick="burgerMenu(1)" class="fa-solid fa-x"></i></div>
+            <nav class="dropdown dropdown-nav-bar">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <a href="">Portfolio</a>
+              <a href="">Team</a>
+              <a href="">Pricing</a>
+              <div class="wtv-dropdown">
+                <div class="double-dropdown">
+                  <a class="" href="">Dropdown </a>
+                  <i
+                    onclick="burgerMenu(2)"
+                    class="fa-solid fa-chevron-down chevron-down"
+                  ></i>
+                </div>
+                <div class="nav-dropdown-parent">
+                  <div class="nav-dropdown">
+                    <div>Dropdown 1</div>
+                    <div class="nav-double-dropdown">
+                      <div class="double-dropdown">
+                        <a>Deep Dropdown</a>
+                        <i
+                          onclick="burgerMenu(3)"
+                          class="fa-solid fa-chevron-down chevron-down"
+                        ></i>
+                      </div>
+                      <div class="triple-dropdown-parent">
+                        <div class="triple-dropdown">
+                          <div>Deepdropdown 1</div>
+                          <div>Deepdropdown 2</div>
+                          <div>Deepdropdown 3</div>
+                          <div>Deepdropdown 4</div>
+                          <div>Deepdropdown 5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>Dropdown 2</div>
+                    <div>Dropdown 3</div>
+                    <div>Dropdown 4</div>
+                  </div>
+                </div>
+              </div>
+              <a href="">Contact</a>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
     <main>
-      <section id="main-section">
+      <section class="main-sections" id="main-section">
         <div class="flex-container">
           <div class="flex-container-left-side">
             <h1>Better Solutions For Your Business</h1>
@@ -89,18 +127,28 @@
       <section class="slider-section">
         <div class="slider-container">
           <div class="slider-content">
-            <div><img src="/images/client-1.png" alt="" /></div>
-            <div><img src="/images/client-2.png" alt="" /></div>
-            <div><img src="/images/client-3.png" alt="" /></div>
-            <div><img src="/images/client-4.png" alt="" /></div>
-            <div><img src="/images/client-5.png" alt="" /></div>
-            <div><img src="/images/client-6.png" alt="" /></div>
-            <div><img src="/images/client-7.png" alt="" /></div>
-            <div><img src="/images/client-8.png" alt="" /></div>
+            <img style="height: 41px" src="/images/client-1.png" alt="" />
+            <img style="height: 33px" src="/images/client-2.png" alt="" />
+            <img style="height: 34px" src="/images/client-3.png" alt="" />
+            <img style="height: 33px" src="/images/client-4.png" alt="" />
+            <img style="height: 34px" src="/images/client-5.png" alt="" />
+            <img style="height: 30px" src="/images/client-6.png" alt="" />
+            <img style="height: 18px" src="/images/client-7.png" alt="" />
+            <img style="height: 52px" src="/images/client-8.png" alt="" />
+          </div>
+          <div class="slider-content">
+            <img style="height: 41px" src="/images/client-1.png" alt="" />
+            <img style="height: 33px" src="/images/client-2.png" alt="" />
+            <img style="height: 34px" src="/images/client-3.png" alt="" />
+            <img style="height: 33px" src="/images/client-4.png" alt="" />
+            <img style="height: 34px" src="/images/client-5.png" alt="" />
+            <img style="height: 30px" src="/images/client-6.png" alt="" />
+            <img style="height: 18px" src="/images/client-7.png" alt="" />
+            <img style="height: 52px" src="/images/client-8.png" alt="" />
           </div>
         </div>
       </section>
-      <section id="about-info">
+      <section class="main-sections" id="about-info">
         <div class="about-info-heading">
           <h2>ABOUT US</h2>
           <div class="heading-border-bottom">
@@ -142,7 +190,7 @@
             </p>
             <a href="#main-section">
               <span>Read More</span>
-              <i class="fa-solid fa-arrow-right-long"></i>
+              <i class="fa-arrow-right-long fa-solid"></i>
             </a>
           </div>
         </div>
@@ -167,18 +215,22 @@
                   class="middle-content middle-content-flex-container-left-side-div-01"
                 >
                   <div class="middle-content-sub-div">
-                    <h4>
+                    <h4
+                      class="middle-content-sub-div-heading"
+                      onclick="middleContent(0)"
+                    >
                       <span>01</span> Non consectetur a erat nam at lectus urna
                       duis?
                     </h4>
 
                     <i
+                      onclick="middleContent(0)"
                       id="fa-chevron-right-01"
                       class="fa-solid fa-chevron-right"
                     ></i>
                   </div>
                   <div
-                    class="middle-content-flex-container-left-side-paragraph-01"
+                    class="middle-content-flex-container-left-side-paragraph"
                   >
                     <p>
                       Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
@@ -192,19 +244,23 @@
                   class="middle-content middle-content-flex-container-left-side-div-02"
                 >
                   <div class="middle-content-sub-div">
-                    <h4>
+                    <h4
+                      onclick="middleContent(1)"
+                      class="middle-content-sub-div-heading"
+                    >
                       <span>02</span>
                       Feugiat scelerisque varius morbi enim nunc faucibus a
                       pellentesque?
                     </h4>
 
                     <i
+                      onclick="middleContent(1)"
                       id="fa-chevron-right-01"
                       class="fa-solid fa-chevron-right"
                     ></i>
                   </div>
                   <div
-                    class="middle-content-flex-container-left-side-paragraph-02"
+                    class="middle-content-flex-container-left-side-paragraph"
                   >
                     <p>
                       Dolor sit amet consectetur adipiscing elit pellentesque
@@ -220,18 +276,22 @@
                   class="middle-content middle-content-flex-container-left-side-div-03"
                 >
                   <div class="middle-content-sub-div">
-                    <h4>
+                    <h4
+                      onclick="middleContent(2)"
+                      class="middle-content-sub-div-heading"
+                    >
                       <span>03</span>
                       Dolor sit amet consectetur adipiscing elit pellentesque?
                     </h4>
 
                     <i
+                      onclick="middleContent(2)"
                       id="fa-chevron-right-01"
                       class="fa-solid fa-chevron-right"
                     ></i>
                   </div>
                   <div
-                    class="middle-content-flex-container-left-side-paragraph-03"
+                    class="middle-content-flex-container-left-side-paragraph"
                   >
                     <p>
                       Eleifend mi in nulla posuere sollicitudin aliquam ultrices
@@ -306,7 +366,7 @@
           </div>
         </div>
       </section>
-      <section id="services-section">
+      <section class="main-sections" id="services-section">
         <div class="services-section-header">
           <h2>SERVICES</h2>
           <div class="heading-border-bottom wtv-border-bottom">
@@ -319,8 +379,8 @@
             consectetur velit
           </p>
         </div>
-        <div class="services-section-flex-container">
-          <div class="services-section-flex-container-box">
+        <div id="services-cards-sect" class="services-section-flex-container">
+          <!-- <div class="services-section-flex-container-box">
             <div class="services-section-box-flex">
               <i class="fa-solid fa-wave-square"></i>
               <h4>Lorem Ipsum</h4>
@@ -359,7 +419,7 @@
                 blanditiis
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="call-to-action">
@@ -380,7 +440,7 @@
           </div>
         </div>
       </section>
-      <section id="portfolio-section">
+      <section class="main-sections" id="portfolio-section">
         <div class="portfolio-section-title">
           <h2>PORTFOLIO</h2>
           <div class="heading-border-bottom wtv-border-bottom">
@@ -396,10 +456,17 @@
         <div class="portfolio-section-container">
           <div class="portfolio-section-content">
             <ul class="portfolio-section-list">
-              <li class="portfolio-section-list-all">All</li>
-              <li class="portfolio-section-list-app">App</li>
-              <li class="portfolio-section-list-card">Card</li>
-              <li class="portfolio-section-list-web">Web</li>
+              <li
+                data-value="All"
+                class="newActive portfolio-section-list-item"
+              >
+                All
+              </li>
+              <li data-value="App" class="portfolio-section-list-item">App</li>
+              <li data-value="Card" class="portfolio-section-list-item">
+                Card
+              </li>
+              <li data-value="Web" class="portfolio-section-list-item">Web</li>
             </ul>
           </div>
 
@@ -409,7 +476,7 @@
                 <img src="/images/masonry-portfolio-1.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-1">
                   <div class="grid-item-info-text">
-                    <h4>App 1</h4>
+                    <h4 class="items">App 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -424,7 +491,7 @@
                 <img src="/images/masonry-portfolio-6.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-6">
                   <div class="grid-item-info-text">
-                    <h4>Branding 2</h4>
+                    <h4 class="items">Branding 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -441,7 +508,7 @@
                 <img src="/images/masonry-portfolio-2.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-2">
                   <div class="grid-item-info-text">
-                    <h4>Product 1</h4>
+                    <h4 class="items">Product 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -456,7 +523,7 @@
                 <img src="/images/masonry-portfolio-5.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-5">
                   <div class="grid-item-info-text">
-                    <h4>Product 2</h4>
+                    <h4 class="items">Product 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -471,7 +538,7 @@
                 <img src="/images/masonry-portfolio-9.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-9">
                   <div class="grid-item-info-text">
-                    <h4>Branding 3</h4>
+                    <h4 class="items">Branding 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -490,7 +557,7 @@
                 <img src="/images/masonry-portfolio-3.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-3">
                   <div class="grid-item-info-text">
-                    <h4>Branding 1</h4>
+                    <h4 class="items">Branding 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -505,7 +572,7 @@
                 <img src="/images/masonry-portfolio-4.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-4">
                   <div class="grid-item-info-text">
-                    <h4>App 2</h4>
+                    <h4 class="items">App 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -520,7 +587,7 @@
                 <img src="/images/masonry-portfolio-7.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-7">
                   <div class="grid-item-info-text">
-                    <h4>App 3</h4>
+                    <h4 class="items">App 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -535,7 +602,7 @@
                 <img src="/images/masonry-portfolio-8.jpg" alt="" />
                 <div class="grid-item-info grid-item-info-8">
                   <div class="grid-item-info-text">
-                    <h4>Product 3</h4>
+                    <h4 class="items">Product 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
                   </div>
                   <div class="grid-item-info-links">
@@ -550,7 +617,7 @@
           </div>
         </div>
       </section>
-      <section id="team-section">
+      <section class="main-sections" id="team-section">
         <div class="team-section-title">
           <h2>TEAM</h2>
           <div class="heading-border-bottom wtv-border-bottom">
@@ -564,7 +631,7 @@
           </p>
         </div>
         <div class="team-section-flex-container">
-          <div class="team-section-flex-container-div">
+          <!-- <div class="team-section-flex-container-div">
             <div class="team-section-flex-container-div-img">
               <img src="/images/team-1.jpg" alt="" />
             </div>
@@ -671,10 +738,10 @@
                 ></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
-      <section id="pricing-section">
+      <section class="main-sections" id="pricing-section">
         <div class="pricing-section-title">
           <h2>PRICING</h2>
           <div class="heading-border-bottom wtv-border-bottom">
@@ -688,7 +755,7 @@
           </p>
         </div>
         <div class="pricing-section-flex-container">
-          <div class="pricing-section-plans">
+          <!-- <div class="pricing-section-plans">
             <div class="pricing-section-plan">
               <h3>Free Plan</h3>
               <h4>
@@ -793,7 +860,7 @@
                 <a href="">Buy Now</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="testimonials-section">
@@ -810,36 +877,141 @@
           </p>
         </div>
         <div class="testimonials-section-flex-container">
-          <div class="testimonials-section-img">
-            <img src="/images/testimonials-2.jpg" alt="" />
-          </div>
-          <h4>Sara Wilsson</h4>
-          <p>Designer</p>
-          <div class="testimonials-section-reviews">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="testimonials-section-paragraph">
-            <em>
-              <sup><i class="fa-solid fa-quote-left"></i></sup> Export tempor
-              illum tamen malis malis eram quae irure esse labore quem cillum
-              quid cillum eram malis quorum velit fore eram velit sunt aliqua
-              noster fugiat irure amet legam anim culpa.
-              <sub><i class="fa-solid fa-quote-right"></i></sub>
-            </em>
+          <div id="testimonials-carousel-container">
+            <div class="testimonials-section-carousel-container">
+              <div class="testimonials-section-carousel">
+                <div class="testimonials-section-img">
+                  <img src="/images/testimonials-1.jpg" alt="" />
+                </div>
+                <h4>Saul Goodman</h4>
+                <p>Ceo & Founder</p>
+                <div class="testimonials-section-reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonials-section-paragraph">
+                  <em>
+                    <sup><i class="fa-solid fa-quote-left"></i></sup> Proin
+                    iaculis purus consequat sem cure digni ssim donec porttitora
+                    entum suscipit rhoncus. Accusantium quam, ultricies eget id,
+                    aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <sub><i class="fa-solid fa-quote-right"></i></sub>
+                  </em>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-section-carousel-container">
+              <div class="testimonials-section-carousel">
+                <div class="testimonials-section-img">
+                  <img src="/images/testimonials-2.jpg" alt="" />
+                </div>
+                <h4>Sara Wilsson</h4>
+                <p>Designer</p>
+                <div class="testimonials-section-reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonials-section-paragraph">
+                  <em>
+                    <sup><i class="fa-solid fa-quote-left"></i></sup> Export
+                    tempor illum tamen malis malis eram quae irure esse labore
+                    quem cillum quid cillum eram malis quorum velit fore eram
+                    velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <sub><i class="fa-solid fa-quote-right"></i></sub>
+                  </em>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-section-carousel-container">
+              <div class="testimonials-section-carousel">
+                <div class="testimonials-section-img">
+                  <img src="/images/testimonials-3.jpg" alt="" />
+                </div>
+                <h4>Jenna Karlis</h4>
+                <p>Store Owner</p>
+                <div class="testimonials-section-reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonials-section-paragraph">
+                  <em>
+                    <sup><i class="fa-solid fa-quote-left"></i></sup> Enim nisi
+                    quem export duis labore cillum quae magna enim sint quorum
+                    nulla quem veniam duis minim tempor labore quem eram duis
+                    noster aute amet eram fore quis sint minim.
+                    <sub><i class="fa-solid fa-quote-right"></i></sub>
+                  </em>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-section-carousel-container">
+              <div class="testimonials-section-carousel">
+                <div class="testimonials-section-img">
+                  <img src="/images/testimonials-4.jpg" alt="" />
+                </div>
+                <h4>Matt Brandon</h4>
+                <p>Freelancer</p>
+                <div class="testimonials-section-reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonials-section-paragraph">
+                  <em>
+                    <sup><i class="fa-solid fa-quote-left"></i></sup> Fugiat
+                    enim eram quae cillum dolore dolor amet nulla culpa multos
+                    export minim fugiat minim velit minim dolor enim duis veniam
+                    ipsum anim magna sunt elit fore quem dolore labore illum
+                    veniam.
+                    <sub><i class="fa-solid fa-quote-right"></i></sub>
+                  </em>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-section-carousel-container">
+              <div class="testimonials-section-carousel">
+                <div class="testimonials-section-img">
+                  <img src="/images/testimonials-5.jpg" alt="" />
+                </div>
+                <h4>John Larson</h4>
+                <p>Entrepreneur</p>
+                <div class="testimonials-section-reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonials-section-paragraph">
+                  <em>
+                    <sup><i class="fa-solid fa-quote-left"></i></sup> Quis
+                    quorum aliqua sint quem legam fore sunt eram irure aliqua
+                    veniam tempor noster veniam enim culpa labore duis sunt
+                    culpa nulla illum cillum fugiat legam esse veniam culpa fore
+                    nisi cillum quid.
+                    <sub><i class="fa-solid fa-quote-right"></i></sub>
+                  </em>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="testimonials-section-swiper-bullet">
-            <span class="current"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="swiper current"></span>
+            <span class="swiper"></span>
+            <span class="swiper"></span>
+            <span class="swiper"></span>
+            <span class="swiper"></span>
           </div>
         </div>
       </section>
@@ -861,11 +1033,17 @@
         <div class="frequently-asked-question-flex-container">
           <div class="frequently-asked-questions">
             <div class="frequently-asked-questions-title">
-              <h4>
+              <h4
+                onclick="frequentQues()"
+                class="frequently-asked-questions-title-heading"
+              >
                 <span><i class="fa-regular fa-circle-question"></i></span>
                 Non consectetur a erat nam at lectus urna duis?
               </h4>
-              <i class="question-chevron fa-solid fa-chevron-right"></i>
+              <i
+                onclick="frequentQues(0)"
+                class="question-chevron fa-solid fa-chevron-right"
+              ></i>
             </div>
             <div class="frequently-asked-questions-content">
               <p>
@@ -877,12 +1055,18 @@
           </div>
           <div class="frequently-asked-questions">
             <div class="frequently-asked-questions-title">
-              <h4>
+              <h4
+                onclick="frequentQues(1)"
+                class="frequently-asked-questions-title-heading"
+              >
                 <span><i class="fa-regular fa-circle-question"></i></span>
                 Feugiat scelerisque varius morbi enim nunc faucibus a
                 pellentesque?
               </h4>
-              <i class="question-chevron fa-solid fa-chevron-right"></i>
+              <i
+                onclick="frequentQues(1)"
+                class="question-chevron fa-solid fa-chevron-right"
+              ></i>
             </div>
             <div class="frequently-asked-questions-content">
               <p>
@@ -896,11 +1080,17 @@
           </div>
           <div class="frequently-asked-questions">
             <div class="frequently-asked-questions-title">
-              <h4>
+              <h4
+                onclick="frequentQues(2)"
+                class="frequently-asked-questions-title-heading"
+              >
                 <span><i class="fa-regular fa-circle-question"></i></span>
                 Dolor sit amet consectetur adipiscing elit pellentesque?
               </h4>
-              <i class="question-chevron fa-solid fa-chevron-right"></i>
+              <i
+                onclick="frequentQues(2)"
+                class="question-chevron fa-solid fa-chevron-right"
+              ></i>
             </div>
             <div class="frequently-asked-questions-content">
               <p>
@@ -915,11 +1105,17 @@
           </div>
           <div class="frequently-asked-questions">
             <div class="frequently-asked-questions-title">
-              <h4>
+              <h4
+                onclick="frequentQues(3)"
+                class="frequently-asked-questions-title-heading"
+              >
                 <span><i class="fa-regular fa-circle-question"></i></span>
                 Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
               </h4>
-              <i class="question-chevron fa-solid fa-chevron-right"></i>
+              <i
+                onclick="frequentQues(3)"
+                class="question-chevron fa-solid fa-chevron-right"
+              ></i>
             </div>
             <div class="frequently-asked-questions-content">
               <p>
@@ -933,12 +1129,18 @@
           </div>
           <div class="frequently-asked-questions">
             <div class="frequently-asked-questions-title">
-              <h4>
+              <h4
+                onclick="frequentQues(4)"
+                class="frequently-asked-questions-title-heading"
+              >
                 <span><i class="fa-regular fa-circle-question"></i></span>
                 Tempus quam pellentesque nec nam aliquam sem et tortor
                 consequat?
               </h4>
-              <i class="question-chevron fa-solid fa-chevron-right"></i>
+              <i
+                onclick="frequentQues(4)"
+                class="question-chevron fa-solid fa-chevron-right"
+              ></i>
             </div>
             <div class="frequently-asked-questions-content">
               <p>
@@ -951,7 +1153,7 @@
           </div>
         </div>
       </section>
-      <section id="contact-section">
+      <section class="main-sections" id="contact-section">
         <div class="contact-section-title">
           <h2>CONTACT</h2>
           <div class="heading-border-bottom wtv-border-bottom">
@@ -1012,27 +1214,27 @@
             </div>
           </div>
           <div class="contact-section-flex-container-right-side">
-            <form action="">
+            <form id="message-form" action="">
               <div class="form-flex-container">
                 <div>
                   <label for="yourname">Your Name</label><br />
-                  <input type="text" id="yourname" name="yourname" required />
+                  <input type="text" id="yourname" name="name" />
                 </div>
                 <div>
                   <label for="youremail">Your Email</label><br />
-                  <input type="text" id="youremail" name="youremail" required />
+                  <input type="text" id="youremail" name="email" />
                 </div>
               </div>
               <div class="subject-label">
                 <label for="subject">Subject</label><br />
-                <input type="text" id="subject" name="subject" required />
+                <input type="text" id="subject" name="subject" />
               </div>
               <div class="form-text-area">
                 <label for="textarea">Message</label><br />
-                <textarea name="textarea" id="textarea"></textarea>
+                <textarea name="message" id="textarea"></textarea>
               </div>
               <div class="button-submit">
-                <button type="submit">Send Messsage</button>
+                <button id="message-button" type="submit">Send Messsage</button>
               </div>
             </form>
           </div>
@@ -1156,5 +1358,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

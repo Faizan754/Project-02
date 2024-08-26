@@ -1,111 +1,149 @@
 .fa-solid {
-    margin-left: 5px;
-    font-size: 12px;
-    font-weight: 550;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 550;
 }
 
 .fa-bars {
-    margin-left: 5px;
-    font-size: 24px;
-    color: white;
+  margin-left: 5px;
+  font-size: 24px;
+  color: white;
 }
 
 .fa-circle-play {
-    margin-right: 8px;
-    font-size: 32px;
+  margin-right: 8px;
+  font-size: 32px;
 }
 
 .fa-circle-check {
-    font-size: 17px;
-    color: #47B2E4;
-    padding-right: 4px;
+  font-size: 17px;
+  color: #47b2e4;
+  padding-right: 4px;
 }
 
 .fa-arrow-right-long {
-    font-size: 18px;
-    margin-left: 5px;
-    transition: all .3s;
+  font-size: 18px;
+  transition: all 0.3s;
+  line-height: 2;
 }
 
 #fa-chevron-right-01 {
-    font-size: 16px;
-    position: relative;
-    left: -3%;
-    transition: all .3s;
+  font-size: 16px;
+  position: relative;
+  left: -3%;
+  transition: all 0.3s;
 }
 
 .fa-paperclip,
 .fa-magnifying-glass-plus {
-    font-size: 24px;
-    padding: 0 2px;
-    color: color-mix(in srgb, #444, transparent 30%)
+  font-size: 24px;
+  padding: 0 2px;
+  color: color-mix(in srgb, #444, transparent 30%);
 }
 
 .fa-paperclip {
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .fa-magnifying-glass-plus {
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .fa-paperclip:hover,
 .fa-magnifying-glass-plus:hover {
-    color: #47B2E4;
+  color: #47b2e4;
 }
 
 .fa-check {
-    padding-right: 8px;
-    font-size: 13px;
-    margin: 0;
-    color: #059652;
+  padding-right: 8px;
+  font-size: 13px;
+  margin: 0;
+  color: #059652;
 }
 
 .fa-xmark {
-    padding-right: 8px;
-    font-size: 15px;
-    margin: 0;
-    opacity: .5;
+  padding-right: 8px;
+  font-size: 15px;
+  margin: 0;
+  opacity: 0.5;
 }
 
 .fa-star {
-    color: #FFC107;
-    font-size: 15px;
-    margin: 0;
+  color: #ffc107;
+  font-size: 15px;
+  margin: 0;
 }
 
 .fa-quote-left,
 .fa-quote-right {
-    color: #47B2E4;
-    opacity: .5;
-    font-size: 26px;
-    margin: 0 5px;
+  color: #47b2e4;
+  opacity: 0.5;
+  font-size: 26px;
+  margin: 0 5px;
 }
 
 .fa-circle-question {
-    color: #47B2E4;
-    font-size: 20px;
+  color: #47b2e4;
+  font-size: 20px;
 }
 
 .question-chevron {
-    font-size: 16px;
-    opacity: .5;
-    transition: .3s;
+  font-size: 16px;
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .fa-location-dot,
 .fa-phone,
 .fa-envelope {
-    font-size: 20px;
-    background-color: #F0F9FD;
-    color: #47B2E4;
-    padding: 12px;
-    border-radius: 9999px;
+  font-size: 20px;
+  background-color: #f0f9fd;
+  color: #47b2e4;
+  padding: 12px;
+  border-radius: 9999px;
 }
 
 .footer-chevron {
-    margin: 0;
-    padding-right: 5px;
-    color: #47B2E4;
-    opacity: .8;
+  margin: 0;
+  padding-right: 5px;
+  color: #47b2e4;
+  opacity: 0.8;
+}
+
+.fa-chevron-right {
+  cursor: pointer;
+}
+
+.fa-brands {
+  margin-left: 8px;
+}
+
+.fa-x {
+  color: white;
+  font-size: 20px;
+  top: 1.5%;
+  position: absolute;
+  right: 30px;
+  z-index: 2;
+}
+
+.chevron-down {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ecf7fd;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 3;
+}
+
+.chevron-down:hover {
+  color: white;
+  background-color: #47b2e4;
+}
+
+.double-dropdown a:hover + i {
+  color: #47b2e4;
 }
